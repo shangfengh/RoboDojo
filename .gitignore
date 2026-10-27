@@ -1,6 +1,3 @@
-# Independent upstream checkout; versions are recorded in sources.lock.json.
-/RoboDojo/
-
 # Python environments and caches.
 __pycache__/
 *.py[cod]
@@ -36,3 +33,5 @@ __pycache__/
 .cache/
 .huggingface/
 wandb/
+# Upstream illustration is an unresolved LFS pointer, not a local image.
+/RoboDojo/XPolicyLab/policy/Spirit_v15/spirit_v15/assets/rc_results.png

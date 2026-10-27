@@ -2,6 +2,13 @@
   "schema_version": 1,
   "recorded_at_utc": "2026-10-26T13:41:46Z",
   "scope": "Source checkout and version recording only; no environment installation, datasets, assets, model downloads, or training.",
+  "workspace_storage": {
+    "layout": "Single root Git repository; RoboDojo and XPolicyLab are ordinary tracked source directories, not submodules.",
+    "upstream_identity": "Repository commits and cleanliness below describe the original acquisition snapshot, before flattening.",
+    "removed_metadata": "Nested .git entries and inactive .gitmodules declarations were backed up outside the workspace and removed.",
+    "deferred_dependencies": "IsaacLab and CuRobo remain absent; their pinned revisions below are provenance only, not active submodules.",
+    "external_lola": "LoLA remains an external source reference outside this workspace."
+  },
   "repositories": {
     "robodojo": {
       "path": "RoboDojo",
