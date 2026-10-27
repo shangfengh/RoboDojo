@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "scope": "CPU FP32, small randomly initialized original LoLA modules, real train numeric rows, synthetic post-bridge visual/global conditions. No VLM, images, GPU, optimizer updates, pretrained policy, or formal training.",
+  "lola_source_commit": "e67b3c9551d72cc87f3595e029ab9643e27aceb2",
+  "statistics_sha256": "f5f2409bd7279088aaa71f0d8e9641220a78f13d83b44e1fd71e5fc8650d8fe9",
+  "adapter_sha256": "319805600b962a521753f478f852c85b7ddfebbd28d63020c6680b3758a9b95c",
+  "check_script_sha256": "33e049d0081e3da0dc75181967cec4a653e165b5927198176ff05569c468fd8d",
+  "torch_version": "2.11.0+cu128",
+  "sample_indices": [
+    0,
+    31,
+    577,
+    578
+  ],
+  "episodes": [
+    0,
+    0,
+    0,
+    2
+  ],
+  "output_shape": [
+    4,
+    16,
+    14
+  ],
+  "gripper_min": 0.3495239317417145,
+  "gripper_max": 0.6170437932014465,
+  "losses": {
+    "loss": 4.356866359710693,
+    "flow_loss": 1.4485242366790771,
+    "arm_loss": 0.2676105499267578,
+    "gripper_loss": 0.23223620653152466,
+    "full_flow_chunks": 6
+  },
+  "normalization": "Train-only mean/std on arm dimensions; identity on grippers; no clipping or epsilon.",
+  "gripper_supervision": "sigmoid + continuous target MSE; no binary threshold",
+  "masking": "Reconstruction uses valid steps; latent flow only full valid 8-step chunks."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "partitions": {
+    "train": {
+      "episodes": 3150,
+      "frames": 1669606,
+      "boundary_and_interior_windows_checked": 12600
+    },
+    "validation": {
+      "episodes": 350,
+      "frames": 186496,
+      "boundary_and_interior_windows_checked": 1400
+    }
+  },
+  "statistics_sha256": "f5f2409bd7279088aaa71f0d8e9641220a78f13d83b44e1fd71e5fc8650d8fe9",
+  "verification_script_sha256": "40cb74509293c5323a23d8bd2e88abaac3f1e97f6e463cba6c20c472543a6524",
+  "checks": [
+    "Every episode: first/last and history/action full-window boundaries.",
+    "Exact state/action copies, masks, zero padding, and episode identity.",
+    "Train mean/std independently recomputed by merging episode moments.",
+    "Statistics source hashes match both partition loads.",
+    "No video reads or model execution."
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "checked_on_utc": "2026-10-26",
+  "repository": {
+    "id": "RoboDojo-Benchmark/RoboDojo",
+    "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo",
+    "revision": "269457a3b42d8d0ae69898a601f2c1487c2f826e",
+    "mirror_url": "https://modelscope.cn/datasets/RoboDojo-Benchmark/RoboDojo",
+    "mirror_contents_verified": false
+  },
+  "download_entry": {
+    "path": "RoboDojo/scripts/RoboDojo/download_data.sh",
+    "source_commit": "f57e1633ffed59761bc8e568cfe7530c4b33381c",
+    "help_command": "bash RoboDojo/scripts/RoboDojo/download_data.sh",
+    "full_joint_download_command_not_executed": "bash RoboDojo/scripts/RoboDojo/download_data.sh huggingface lerobot_v3.0",
+    "full_ee_download_command_not_executed": "bash RoboDojo/scripts/RoboDojo/download_data.sh huggingface lerobot_v3.0_ee",
+    "target_root_environment_variable": "ROBO_DOJO_DATA_ROOT",
+    "default_target_root": "RoboDojo/data",
+    "cache_root": "RoboDojo/.cache",
+    "notes": [
+      "The official download commands retrieve the whole selected format, not metadata only.",
+      "ROBO_DOJO_DATA_ROOT changes the output link location, not the repository-local download cache location.",
+      "On a fresh cache the script uses git clone --branch with HF_REVISION; do not assume an arbitrary commit SHA works as a branch name.",
+      "Use revision-specific resolve URLs for metadata inspection; this record does not claim a complete dataset download."
+    ]
+  },
+  "common_info_json_fields": {
+    "codebase_version": "v3.0",
+    "robot_type": "unified_robot",
+    "total_episodes": 3500,
+    "total_frames": 1856102,
+    "total_tasks": 35,
+    "fps": 25,
+    "splits": {
+      "train": "0:3500"
+    },
+    "image_keys": [
+      "observation.images.cam_high",
+      "observation.images.cam_left_wrist",
+      "observation.images.cam_right_wrist"
+    ],
+    "image_shape_chw": [3, 480, 640],
+    "video_codec": "av1"
+  },
+  "formats": {
+    "joint": {
+      "download_argument": "lerobot_v3.0",
+      "remote_root": "data/RoboDojo_lerobot_v30_video",
+      "state_shape": [14],
+      "action_shape": [14],
+      "info_git_blob_oid": "ce4f799ccd772b30a52a5291abe8fabfeaa1c126",
+      "episodes_file": "meta/episodes/chunk-000/file-000.parquet",
+      "episodes_file_bytes": 10129194,
+      "episodes_file_lfs_sha256": "51c5eddb631975864d138376b8484075d73d9e76100ada57030cbe452d1b1472"
+    },
+    "ee": {
+      "download_argument": "lerobot_v3.0_ee",
+      "remote_root": "data/RoboDojo_ee_lerobot_v30_video",
+      "state_shape": [16],
+      "action_shape": [16],
+      "info_git_blob_oid": "188908900d7f2b6c87229c7bd54f042ba7e2128b",
+      "episodes_file": "meta/episodes/chunk-000/file-000.parquet",
+      "episodes_file_bytes": 10565400,
+      "episodes_file_lfs_sha256": "3d28c4b9d0dcdb385766c75ff0612547b04640b7f0c7606ea2cf48abade55c5c"
+    }
+  },
+  "metadata_relative_paths": {
+    "info": "meta/info.json",
+    "normalization_statistics": "meta/stats.json",
+    "task_table": "meta/tasks.parquet",
+    "episode_table": "meta/episodes/chunk-000/file-000.parquet"
+  },
+  "url_templates": {
+    "browse": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/tree/{revision}/{remote_root}/meta",
+    "read_file": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/{revision}/{remote_root}/{relative_path}"
+  },
+  "verification_scope": {
+    "download_script_help_executed": true,
+    "info_json_contents_read": true,
+    "metadata_paths_listed": true,
+    "stats_json_contents_read": false,
+    "task_parquet_contents_read": false,
+    "episode_parquet_contents_read": false,
+    "video_or_frame_data_downloaded": false,
+    "environment_dependencies_installed": false
+  },
+  "pending_checks": [
+    "Map the 35 dataset task entries to the locked benchmark task inventory.",
+    "Confirm embodiment provenance; robot_type=unified_robot is not an ARX X5 provenance certificate.",
+    "Inspect episode grouping and task tables before designing train/validation splits.",
+    "Verify actual joint/gripper ranges, temporal alignment, and video decoding on selected samples."
+  ]
+}

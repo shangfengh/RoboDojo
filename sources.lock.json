@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-26T13:41:46Z",
+  "scope": "Source checkout and version recording only; no environment installation, datasets, assets, model downloads, or training.",
+  "repositories": {
+    "robodojo": {
+      "path": "RoboDojo",
+      "remote": "https://github.com/robodojo-benchmark/RoboDojo.git",
+      "commit": "f57e1633ffed59761bc8e568cfe7530c4b33381c",
+      "tracked_worktree_clean": true,
+      "lfs_smudge_skipped": true
+    },
+    "xpolicylab": {
+      "path": "RoboDojo/XPolicyLab",
+      "remote": "https://github.com/XPolicyLab/XPolicyLab.git",
+      "commit": "5d0be1499634d3176258c8f2e31f5fe816497b0a",
+      "selection": "Exact gitlink recorded by the locked RoboDojo commit; not the remote branch tip.",
+      "tracked_worktree_clean": true,
+      "lfs_smudge_skipped": true
+    },
+    "lola_v07": {
+      "path": "/home/v-wangxiaofa/lzl/lola_lerobot",
+      "remote": "https://github.com/NsurrenderX/lola_lerobot.git",
+      "commit": "e67b3c9551d72cc87f3595e029ab9643e27aceb2",
+      "selection": "Existing local source reference; not cloned or modified.",
+      "tracked_worktree_clean": true,
+      "untracked_files": [
+        {
+          "path": "tests/test_lola_dataset_episode_subset.py",
+          "sha256": "006661119f7305e5df19ce86bd417d4c94c98b84071d3686988d880496529ae2"
+        }
+      ],
+      "note": "This records the current source identity, not an immutable training snapshot. The existing untracked file is preserved and is not part of the recorded commit."
+    }
+  },
+  "deferred_submodules": [
+    {
+      "path": "RoboDojo/third_party/IsaacLab",
+      "remote": "https://github.com/yuechen0614/IsaacLab.git",
+      "commit": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+      "initialized": false
+    },
+    {
+      "path": "RoboDojo/third_party/curobo",
+      "remote": "https://github.com/yuechen0614/curobo.git",
+      "commit": "d17b54ce32cba095c0b000c4c58777075d11de0e",
+      "initialized": false
+    }
+  ]
+}

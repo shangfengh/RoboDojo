@@ -1,0 +1,2218 @@
+{
+  "scope": "All numeric state/action rows; selected video timestamps only. No training or data modification.",
+  "numeric_files": [
+    "data/chunk-000/file-000.parquet",
+    "data/chunk-000/file-001.parquet",
+    "data/chunk-000/file-002.parquet"
+  ],
+  "rows_checked": 1856102,
+  "state_action_finite": true,
+  "frame_indices_and_lengths_valid": true,
+  "max_timestamp_error_seconds": 1.8310546892053026e-06,
+  "next_state_alignment": {
+    "within_episode_pairs": 1852602,
+    "max_abs_error_by_dimension": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_abs_error_by_dimension": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pairs_exceeding_1e-5": 0
+  },
+  "terminal_action_state_max_abs_error": 0.08225177228450775,
+  "grippers": {
+    "state": [
+      {
+        "index": 6,
+        "min": -3.212450869184004e-17,
+        "max": 1.0,
+        "interior_count": 631711,
+        "interior_fraction": 0.3403428259869339,
+        "quantiles": [
+          -3.212450869184004e-17,
+          0.1585810944437981,
+          0.5459300726652145,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rounded_4dp_unique_count": 10001
+      },
+      {
+        "index": 13,
+        "min": -3.212450869184004e-17,
+        "max": 1.0,
+        "interior_count": 576878,
+        "interior_fraction": 0.3108008072832204,
+        "quantiles": [
+          -3.212450869184004e-17,
+          0.13312395811080932,
+          0.5932434648275375,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rounded_4dp_unique_count": 9999
+      }
+    ],
+    "action": [
+      {
+        "index": 6,
+        "min": -3.212450869184004e-17,
+        "max": 1.0,
+        "interior_count": 631898,
+        "interior_fraction": 0.3404435747604388,
+        "quantiles": [
+          -3.212450869184004e-17,
+          0.15848996192216874,
+          0.5459144115447998,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rounded_4dp_unique_count": 10001
+      },
+      {
+        "index": 13,
+        "min": -3.212450869184004e-17,
+        "max": 1.0,
+        "interior_count": 577095,
+        "interior_fraction": 0.31091771896156567,
+        "quantiles": [
+          -3.212450869184004e-17,
+          0.13299244940280913,
+          0.5926951766014099,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rounded_4dp_unique_count": 9999
+      }
+    ]
+  },
+  "video_checks": [
+    {
+      "episode_id": 0,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-000.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 0.0,
+      "declared_end": 23.08,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 0.0,
+          "decoded_pts_seconds": 0.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 289,
+          "requested_seconds": 11.56,
+          "decoded_pts_seconds": 11.56,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 577,
+          "requested_seconds": 23.08,
+          "decoded_pts_seconds": 23.08,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 0,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-000.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 0.0,
+      "declared_end": 23.08,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 0.0,
+          "decoded_pts_seconds": 0.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 289,
+          "requested_seconds": 11.56,
+          "decoded_pts_seconds": 11.56,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 577,
+          "requested_seconds": 23.08,
+          "decoded_pts_seconds": 23.08,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 0,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-000.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 0.0,
+      "declared_end": 23.12,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 0.0,
+          "decoded_pts_seconds": 0.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 289,
+          "requested_seconds": 11.56,
+          "decoded_pts_seconds": 11.56,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 577,
+          "requested_seconds": 23.08,
+          "decoded_pts_seconds": 23.08,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 1,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-000.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 23.08,
+      "declared_end": 45.48,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 23.08,
+          "decoded_pts_seconds": 23.08,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 560,
+          "requested_seconds": 45.48,
+          "decoded_pts_seconds": 45.48,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 60,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-002.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 408.80000000000007,
+      "declared_end": 433.68000000000006,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 408.80000000000007,
+          "decoded_pts_seconds": 408.8,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 622,
+          "requested_seconds": 433.68000000000006,
+          "decoded_pts_seconds": 433.68,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 177,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-014.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 202.79999999999998,
+      "declared_end": 231.95999999999998,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 202.79999999999998,
+          "decoded_pts_seconds": 202.8,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 729,
+          "requested_seconds": 231.95999999999998,
+          "decoded_pts_seconds": 231.96,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 178,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-014.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 231.95999999999998,
+      "declared_end": 260.59999999999997,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 231.95999999999998,
+          "decoded_pts_seconds": 231.96,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 716,
+          "requested_seconds": 260.59999999999997,
+          "decoded_pts_seconds": 260.6,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 200,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-016.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 233.11999999999998,
+      "declared_end": 263.0,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 233.11999999999998,
+          "decoded_pts_seconds": 233.12,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 373,
+          "requested_seconds": 248.03999999999996,
+          "decoded_pts_seconds": 248.04,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 746,
+          "requested_seconds": 262.96,
+          "decoded_pts_seconds": 262.96,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 200,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-011.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 262.48,
+      "declared_end": 292.36,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 262.48,
+          "decoded_pts_seconds": 262.48,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 373,
+          "requested_seconds": 277.40000000000003,
+          "decoded_pts_seconds": 277.4,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 746,
+          "requested_seconds": 292.32,
+          "decoded_pts_seconds": 292.32,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 200,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-011.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 320.6000000000001,
+      "declared_end": 350.4800000000001,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 320.6000000000001,
+          "decoded_pts_seconds": 320.6,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 373,
+          "requested_seconds": 335.5200000000001,
+          "decoded_pts_seconds": 335.52,
+          "error_seconds": 1.1368683772161603e-13,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 746,
+          "requested_seconds": 350.44000000000005,
+          "decoded_pts_seconds": 350.44,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 290,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-025.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 28.48,
+      "declared_end": 54.04,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 28.48,
+          "decoded_pts_seconds": 28.48,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 639,
+          "requested_seconds": 54.04,
+          "decoded_pts_seconds": 54.04,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 300,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-026.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 62.8,
+      "declared_end": 85.0,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 62.8,
+          "decoded_pts_seconds": 62.8,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 277,
+          "requested_seconds": 73.88,
+          "decoded_pts_seconds": 73.88,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 554,
+          "requested_seconds": 84.96,
+          "decoded_pts_seconds": 84.96,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 300,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-017.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 352.15999999999997,
+      "declared_end": 374.35999999999996,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 352.15999999999997,
+          "decoded_pts_seconds": 352.16,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 277,
+          "requested_seconds": 363.23999999999995,
+          "decoded_pts_seconds": 363.24,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 554,
+          "requested_seconds": 374.32,
+          "decoded_pts_seconds": 374.32,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 300,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-018.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 62.8,
+      "declared_end": 85.0,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 62.8,
+          "decoded_pts_seconds": 62.8,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 277,
+          "requested_seconds": 73.88,
+          "decoded_pts_seconds": 73.88,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 554,
+          "requested_seconds": 84.96,
+          "decoded_pts_seconds": 84.96,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 324,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-027.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 283.28,
+      "declared_end": 304.88,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 283.28,
+          "decoded_pts_seconds": 283.28,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 540,
+          "requested_seconds": 304.88,
+          "decoded_pts_seconds": 304.88,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 324,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-018.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 413.4,
+      "declared_end": 435.0,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 413.4,
+          "decoded_pts_seconds": 413.4,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 540,
+          "requested_seconds": 435.0,
+          "decoded_pts_seconds": 435.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 453,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-023.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 126.08000000000001,
+      "declared_end": 133.72,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 126.08000000000001,
+          "decoded_pts_seconds": 126.08,
+          "error_seconds": 1.4210854715202004e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 191,
+          "requested_seconds": 133.72,
+          "decoded_pts_seconds": 133.72,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 500,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-035.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 43.56,
+      "declared_end": 69.8,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 43.56,
+          "decoded_pts_seconds": 43.56,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 328,
+          "requested_seconds": 56.68,
+          "decoded_pts_seconds": 56.68,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 655,
+          "requested_seconds": 69.76,
+          "decoded_pts_seconds": 69.76,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 500,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-023.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 35.8,
+      "declared_end": 62.03999999999999,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 35.8,
+          "decoded_pts_seconds": 35.8,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 328,
+          "requested_seconds": 48.919999999999995,
+          "decoded_pts_seconds": 48.92,
+          "error_seconds": 7.105427357601002e-15,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 655,
+          "requested_seconds": 62.0,
+          "decoded_pts_seconds": 62.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 500,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-024.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 0.0,
+      "declared_end": 26.24,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 0.0,
+          "decoded_pts_seconds": 0.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 328,
+          "requested_seconds": 13.12,
+          "decoded_pts_seconds": 13.12,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 655,
+          "requested_seconds": 26.2,
+          "decoded_pts_seconds": 26.2,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 510,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-024.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 260.92,
+      "declared_end": 286.64,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 260.92,
+          "decoded_pts_seconds": 260.92,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 643,
+          "requested_seconds": 286.64,
+          "decoded_pts_seconds": 286.64,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 556,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-042.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 184.16,
+      "declared_end": 210.56,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 184.16,
+          "decoded_pts_seconds": 184.16,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 660,
+          "requested_seconds": 210.56,
+          "decoded_pts_seconds": 210.52,
+          "error_seconds": 0.03999999999999204,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 600,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-049.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 52.92,
+      "declared_end": 113.32,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 52.92,
+          "decoded_pts_seconds": 52.92,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 755,
+          "requested_seconds": 83.12,
+          "decoded_pts_seconds": 83.12,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 1509,
+          "requested_seconds": 113.28,
+          "decoded_pts_seconds": 113.28,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 600,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-031.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 236.72000000000003,
+      "declared_end": 297.12,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 236.72000000000003,
+          "decoded_pts_seconds": 236.72,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 755,
+          "requested_seconds": 266.92,
+          "decoded_pts_seconds": 266.92,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 1509,
+          "requested_seconds": 297.08000000000004,
+          "decoded_pts_seconds": 297.08,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 600,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-032.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 263.04,
+      "declared_end": 323.44,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 263.04,
+          "decoded_pts_seconds": 263.04,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 755,
+          "requested_seconds": 293.24,
+          "decoded_pts_seconds": 293.24,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 1509,
+          "requested_seconds": 323.40000000000003,
+          "decoded_pts_seconds": 323.4,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 658,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-060.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 223.32,
+      "declared_end": 276.56,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 223.32,
+          "decoded_pts_seconds": 223.32,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 1331,
+          "requested_seconds": 276.56,
+          "decoded_pts_seconds": 276.52,
+          "error_seconds": 0.040000000000020464,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 696,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-068.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 109.92,
+      "declared_end": 162.52,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 109.92,
+          "decoded_pts_seconds": 109.92,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 1315,
+          "requested_seconds": 162.52,
+          "decoded_pts_seconds": 162.52,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 800,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-075.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 0.0,
+      "declared_end": 37.32,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 0.0,
+          "decoded_pts_seconds": 0.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 466,
+          "requested_seconds": 18.64,
+          "decoded_pts_seconds": 18.64,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 932,
+          "requested_seconds": 37.28,
+          "decoded_pts_seconds": 37.28,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 800,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-050.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 28.560000000000002,
+      "declared_end": 65.88,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 28.560000000000002,
+          "decoded_pts_seconds": 28.56,
+          "error_seconds": 3.552713678800501e-15,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 466,
+          "requested_seconds": 47.2,
+          "decoded_pts_seconds": 47.2,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 932,
+          "requested_seconds": 65.84,
+          "decoded_pts_seconds": 65.84,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 800,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-051.mp4",
+      "metadata_span_delta_frames": 0,
+      "declared_start": 54.64,
+      "declared_end": 91.96000000000001,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 54.64,
+          "decoded_pts_seconds": 54.64,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 466,
+          "requested_seconds": 73.28,
+          "decoded_pts_seconds": 73.28,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 932,
+          "requested_seconds": 91.92,
+          "decoded_pts_seconds": 91.92,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 807,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-075.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 278.68,
+      "declared_end": 309.84000000000003,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 278.68,
+          "decoded_pts_seconds": 278.68,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 779,
+          "requested_seconds": 309.84000000000003,
+          "decoded_pts_seconds": 309.8,
+          "error_seconds": 0.040000000000020464,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 807,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-050.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 307.24,
+      "declared_end": 338.40000000000003,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 307.24,
+          "decoded_pts_seconds": 307.24,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 779,
+          "requested_seconds": 338.40000000000003,
+          "decoded_pts_seconds": 338.4,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 822,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-077.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 77.08,
+      "declared_end": 106.0,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 77.08,
+          "decoded_pts_seconds": 77.08,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 723,
+          "requested_seconds": 106.0,
+          "decoded_pts_seconds": 106.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 1359,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-120.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 25.64,
+      "declared_end": 38.4,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 25.64,
+          "decoded_pts_seconds": 25.64,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 319,
+          "requested_seconds": 38.4,
+          "decoded_pts_seconds": 38.4,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 1523,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-128.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 115.56,
+      "declared_end": 163.68,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 115.56,
+          "decoded_pts_seconds": 115.56,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 1203,
+          "requested_seconds": 163.68,
+          "decoded_pts_seconds": 163.68,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 1625,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-091.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 361.64,
+      "declared_end": 377.12,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 361.64,
+          "decoded_pts_seconds": 361.64,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 387,
+          "requested_seconds": 377.12,
+          "decoded_pts_seconds": 377.12,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 1696,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-140.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 295.71999999999997,
+      "declared_end": 313.43999999999994,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 295.71999999999997,
+          "decoded_pts_seconds": 295.72,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 443,
+          "requested_seconds": 313.43999999999994,
+          "decoded_pts_seconds": 313.44,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 1740,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-144.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 156.35999999999999,
+      "declared_end": 177.07999999999998,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 156.35999999999999,
+          "decoded_pts_seconds": 156.36,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 518,
+          "requested_seconds": 177.07999999999998,
+          "decoded_pts_seconds": 177.08,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 1935,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-107.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 294.23999999999995,
+      "declared_end": 306.59999999999997,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 294.23999999999995,
+          "decoded_pts_seconds": 294.24,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 309,
+          "requested_seconds": 306.59999999999997,
+          "decoded_pts_seconds": 306.6,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2057,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-171.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 185.4,
+      "declared_end": 221.68,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 185.4,
+          "decoded_pts_seconds": 185.4,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 907,
+          "requested_seconds": 221.68,
+          "decoded_pts_seconds": 221.68,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2112,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-178.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 139.96,
+      "declared_end": 175.08,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 139.96,
+          "decoded_pts_seconds": 139.96,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 878,
+          "requested_seconds": 175.08,
+          "decoded_pts_seconds": 175.08,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2162,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-123.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 280.48,
+      "declared_end": 315.28000000000003,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 280.48,
+          "decoded_pts_seconds": 280.48,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 870,
+          "requested_seconds": 315.28000000000003,
+          "decoded_pts_seconds": 315.28,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2223,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-127.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 100.32000000000001,
+      "declared_end": 108.0,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 100.32000000000001,
+          "decoded_pts_seconds": 100.32,
+          "error_seconds": 1.4210854715202004e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 192,
+          "requested_seconds": 108.0,
+          "decoded_pts_seconds": 108.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2366,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-195.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 43.36,
+      "declared_end": 50.08,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 43.36,
+          "decoded_pts_seconds": 43.36,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 168,
+          "requested_seconds": 50.08,
+          "decoded_pts_seconds": 50.08,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2387,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-134.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 82.64,
+      "declared_end": 99.36,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 82.64,
+          "decoded_pts_seconds": 82.64,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 418,
+          "requested_seconds": 99.36,
+          "decoded_pts_seconds": 99.36,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2475,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-131.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 803.7199999999998,
+      "declared_end": 812.5199999999998,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 803.7199999999998,
+          "decoded_pts_seconds": 803.72,
+          "error_seconds": 2.2737367544323206e-13,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 220,
+          "requested_seconds": 812.5199999999998,
+          "decoded_pts_seconds": 812.52,
+          "error_seconds": 2.2737367544323206e-13,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2627,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-140.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 175.48000000000002,
+      "declared_end": 187.8,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 175.48000000000002,
+          "decoded_pts_seconds": 175.48,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 308,
+          "requested_seconds": 187.8,
+          "decoded_pts_seconds": 187.8,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2692,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-208.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 15.68,
+      "declared_end": 24.96,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 15.68,
+          "decoded_pts_seconds": 15.68,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 232,
+          "requested_seconds": 24.96,
+          "decoded_pts_seconds": 24.96,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2702,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-208.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 126.91999999999999,
+      "declared_end": 144.2,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 126.91999999999999,
+          "decoded_pts_seconds": 126.92,
+          "error_seconds": 1.4210854715202004e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 432,
+          "requested_seconds": 144.2,
+          "decoded_pts_seconds": 144.2,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2842,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-142.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 76.52,
+      "declared_end": 102.16,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 76.52,
+          "decoded_pts_seconds": 76.52,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 641,
+          "requested_seconds": 102.16,
+          "decoded_pts_seconds": 102.16,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2844,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-148.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 22.2,
+      "declared_end": 40.2,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 22.2,
+          "decoded_pts_seconds": 22.2,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 450,
+          "requested_seconds": 40.2,
+          "decoded_pts_seconds": 40.2,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 2994,
+      "camera": "cam_right_wrist",
+      "video": "videos/observation.images.cam_right_wrist/chunk-000/file-153.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 84.4,
+      "declared_end": 95.36000000000001,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 84.4,
+          "decoded_pts_seconds": 84.4,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 274,
+          "requested_seconds": 95.36000000000001,
+          "decoded_pts_seconds": 95.36,
+          "error_seconds": 1.4210854715202004e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 3103,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-230.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 68.12,
+      "declared_end": 87.24000000000001,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 68.12,
+          "decoded_pts_seconds": 68.12,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 478,
+          "requested_seconds": 87.24000000000001,
+          "decoded_pts_seconds": 87.24,
+          "error_seconds": 1.4210854715202004e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 3103,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-152.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 26.44,
+      "declared_end": 45.56,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 26.44,
+          "decoded_pts_seconds": 26.44,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 478,
+          "requested_seconds": 45.56,
+          "decoded_pts_seconds": 45.56,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 3162,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-234.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 53.84,
+      "declared_end": 74.48,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 53.84,
+          "decoded_pts_seconds": 53.84,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 516,
+          "requested_seconds": 74.48,
+          "decoded_pts_seconds": 74.48,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 3195,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-156.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 33.12,
+      "declared_end": 67.72,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 33.12,
+          "decoded_pts_seconds": 33.12,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 865,
+          "requested_seconds": 67.72,
+          "decoded_pts_seconds": 67.72,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 3279,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-157.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 506.88000000000005,
+      "declared_end": 517.96,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 506.88000000000005,
+          "decoded_pts_seconds": 506.88,
+          "error_seconds": 5.684341886080802e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 277,
+          "requested_seconds": 517.96,
+          "decoded_pts_seconds": 517.96,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 3359,
+      "camera": "cam_high",
+      "video": "videos/observation.images.cam_high/chunk-000/file-243.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 173.84,
+      "declared_end": 191.0,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 173.84,
+          "decoded_pts_seconds": 173.84,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 429,
+          "requested_seconds": 191.0,
+          "decoded_pts_seconds": 191.0,
+          "error_seconds": 0.0,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 3359,
+      "camera": "cam_left_wrist",
+      "video": "videos/observation.images.cam_left_wrist/chunk-000/file-160.mp4",
+      "metadata_span_delta_frames": -1,
+      "declared_start": 226.11999999999998,
+      "declared_end": 243.27999999999997,
+      "checks": [
+        {
+          "frame_index": 0,
+          "requested_seconds": 226.11999999999998,
+          "decoded_pts_seconds": 226.12,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": true,
+          "rgb_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame_index": 429,
+          "requested_seconds": 243.27999999999997,
+          "decoded_pts_seconds": 243.28,
+          "error_seconds": 2.842170943040401e-14,
+          "decoded_pts_within_declared_span": false,
+          "rgb_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    }
+  ],
+  "video_check_summary": {
+    "segments_checked": 59,
+    "anomalous_metadata_segments_checked": 43,
+    "timestamps_checked": 136,
+    "max_nearest_frame_error_seconds": 0.040000000000020464,
+    "timestamps_outside_declared_span": 40
+  }
+}

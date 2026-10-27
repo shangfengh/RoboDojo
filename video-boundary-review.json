@@ -1,0 +1,82 @@
+{
+  "scope": "Three previously non-exact requests; packet inventory and decoded video tails only.",
+  "input_report_sha256": "1d3ac2d6e21433fa63e11c23824eec3d6b75dcb5b163df9e21b42809d6521967",
+  "records": [
+    {
+      "episode_id": 556,
+      "video": "videos/observation.images.cam_high/chunk-000/file-042.mp4",
+      "requested_seconds": 210.56,
+      "declared_episode_end": 210.56,
+      "stream_duration_seconds": 210.56,
+      "packet_count": 5264,
+      "packet_pts_unique_count": 5264,
+      "packet_last_pts_seconds": 210.52,
+      "decoded_tail_last_pts_seconds": 210.52,
+      "decoded_tail_frames": 26,
+      "sum_numeric_episode_lengths_in_file": 5265,
+      "numeric_episodes_in_file": [
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556
+      ],
+      "is_last_numeric_episode_in_file": true
+    },
+    {
+      "episode_id": 658,
+      "video": "videos/observation.images.cam_high/chunk-000/file-060.mp4",
+      "requested_seconds": 276.56,
+      "declared_episode_end": 276.56,
+      "stream_duration_seconds": 276.56,
+      "packet_count": 6914,
+      "packet_pts_unique_count": 6914,
+      "packet_last_pts_seconds": 276.52,
+      "decoded_tail_last_pts_seconds": 276.52,
+      "decoded_tail_frames": 25,
+      "sum_numeric_episode_lengths_in_file": 6915,
+      "numeric_episodes_in_file": [
+        654,
+        655,
+        656,
+        657,
+        658
+      ],
+      "is_last_numeric_episode_in_file": true
+    },
+    {
+      "episode_id": 807,
+      "video": "videos/observation.images.cam_high/chunk-000/file-075.mp4",
+      "requested_seconds": 309.84000000000003,
+      "declared_episode_end": 309.84000000000003,
+      "stream_duration_seconds": 309.84,
+      "packet_count": 7746,
+      "packet_pts_unique_count": 7746,
+      "packet_last_pts_seconds": 309.8,
+      "decoded_tail_last_pts_seconds": 309.8,
+      "decoded_tail_frames": 27,
+      "sum_numeric_episode_lengths_in_file": 7747,
+      "numeric_episodes_in_file": [
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807
+      ],
+      "is_last_numeric_episode_in_file": true
+    }
+  ],
+  "correction": "The prior decoded_pts_within_declared_span field assumes a half-open interval. It is not proof of mispaired image/state content. No frames are removed or replaced, and metadata boundaries alone cannot establish whether neighboring episodes intentionally share an observation.",
+  "source_findings": {
+    "xpolicylab_converter": "Adds one image per numeric row and delegates video writing to LeRobot.",
+    "local_lerobot_writer": "Builds episode endpoints from measured encoded video duration.",
+    "local_lola_reader": "Queries episode video start plus local row timestamp.",
+    "limitation": "Local writer code is not proven to be the code version that produced the published data."
+  }
+}
